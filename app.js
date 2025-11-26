@@ -12,7 +12,7 @@ app.use("/api/products", proudctRoute);
 
 // Connect to MongoDB and start the server
 
-mongoose.connect('mongodb+srv://rajtandel:etf50SK2scePmV27@cluster0.r4ekyqx.mongodb.net/Node-API?appName=Cluster0').then(() => {
+mongoose.connect('mongodb+srv://MONGO_DB_USER:PASSWORD@cluster0.r4ekyqx.mongodb.net/Node-API?appName=Cluster0').then(() => {
     console.log('Connected to MongoDB');
     app.listen(port, () => {
         console.log(`Server is listening on port ${port}`);
